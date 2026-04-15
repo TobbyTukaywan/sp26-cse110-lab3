@@ -2,23 +2,175 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Sample Team Meeting Minutes</title>
+    <meta name="description" content="Project planning meeting minutes">
+    <link rel="icon" href="favicon.ico">
+    <title>Project Planning Team Meeting Minutes</title>
   </head>
   <body>
     <header>
         <nav>
             <ul>
-
+              <li><a href="#attendance">Attendance</a></li>
+              <li><a href="#agenda">Agenda</a></li>
+              <li><a href="#media">Media</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Team Meeting Minutes</h1>
-        <h2>Meeting Topic</h2>
-        <h2>Meeting Date</h2>
+        <h1>Project Planning Team Meeting</h1>
+
+        <section>
+          <h2>Meeting Topic</h2>
+          <p>Initial brainstorming session</p>
+        </section>
+
+        <section>
+          <h2>Meeting Date</h2>
+          <p>April 14, 2026</p>
+        </section>
+
+        <section id="attendance">
+          <h2>Attendance</h2>
+          <ul>
+            <li>Abdurrahman</li>
+            <li>Andrew</li>
+            <li>Mani</li>
+          </ul>
+        </section>
+
+        <section id="agenda">
+          <h2>Agenda</h2>
+          <ol>
+            <li>Discuss features</li>
+            <li>Assign roles</li>
+            <li>Set deadlines</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Unfinished Business</h2>
+          <p>No unfinished business.</p>
+
+          <hr>
+
+          <h2>New Business</h2>
+          <p>Discuss project delays.</p>
+        </section>
+
+        <section>
+          <h2>Miscellaneous</h2>
+
+          <details>
+            <summary>Questions raised</summary>
+            <p>What is the nature of the project, exactly?</p>
+          </details>
+        </section>
+
+        <section>
+          <h2>Logo placeholder</h2>
+
+          <img src="media/Logo.png" alt="Placeholder of the logo">
+        </section>
+
+        <section id="media">
+          <h2>Prototypes</h2>
+          <div>
+            <p>This section contains prototype media assets.</p>
+          </div>
+          
+          <h3>Ambience</h3>
+          <audio controls>
+            <source src="media/WaterSound.wav">
+          </audio>
+
+          <br>
+          
+          <h3>Gameplay</h3>
+          <video controls width="250">
+            <source src="media/ScreenRecording.mp4">
+          </video>
+
+        </section>
+
+        <p>
+          The <strong>main goal</strong> was to create a
+          <em>simple prototype</em> for testing.
+          One idea was <b>settings</b> to change the
+          <i>character controls</i>.
+          <span>This was rejected.</span>
+        </p>
+
+        <section>
+          <h2>Feedback Form</h2>
+
+          <form>
+
+            <fieldset>
+
+              <label>Name:</label>
+              <input type="text">
+
+              <br><br>
+
+              <label>Date:</label>
+              <input type="date">
+
+              <br><br>
+
+              <label>Role:</label>
+
+              <input type="radio" name="role"> Dev
+              <input type="radio" name="role"> Design
+              <input type="radio" name="role"> Audio
+              <input type="radio" name="role"> Art
+
+              <br><br>
+
+              <label>Topics Covered:</label>
+
+              <input type="checkbox"> UI
+              <input type="checkbox"> Gameplay
+              <input type="checkbox"> Audio
+              <input type="checkbox"> Art
+
+              <br><br>
+
+              <label>Favorite Tool:</label>
+
+              <input list="tools">
+
+              <datalist id="tools">
+                <option value="VSCode">
+                <option value="Godot">
+                <option value="Blender">
+                <option value="Unity">
+              </datalist>
+
+              <br><br>
+
+              <label>Priority:</label>
+
+              <select>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+              </select>
+
+              <br><br>
+
+              <textarea rows="4" cols="30"></textarea>
+
+              <br><br>
+
+              <button>Submit</button>
+
+            </fieldset>
+
+          </form>
+        </section>
     </main>
     <footer>
-
+      <p>Meeting minutes recorded April 2026</p>
     </footer>
   </body>
 </html>
