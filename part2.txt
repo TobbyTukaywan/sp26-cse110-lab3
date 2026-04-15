@@ -1,2 +1,7 @@
 1: WongAvery
+2: iHateC++
+4: JavaScriptRocks
+5: ShraviBeatsReact
+8: coolcoolcool3x
+9: 2020_sucked
 11: ElaineFirst
