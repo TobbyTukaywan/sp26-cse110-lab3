@@ -54,3 +54,39 @@ summary {
   color: #6b1f2b;
   color: color(display-p3 0.42 0.12 0.17);
 }
+
+/* section containers */
+main {
+  width: 90%; 
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem 1.25rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+section {
+  position: relative;
+  margin-top: 1.25rem;
+  margin-right: 0;
+  margin-bottom: 1.25rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  border-style: solid;
+  border-color: var(--maroon);
+  border-width: 1px;
+  border-radius: 6px;
+  height: auto;
+  min-width: 0;
+}
+
+#media {
+  margin: 0 0 1.5rem 0;
+  border: 2px solid var(--maroon);
+}
