@@ -6,6 +6,11 @@
   --text-color: rgb(52, 36, 36);
 }
 
+/* global sizing */
+* {
+  box-sizing: border-box;
+}
+
 /* page font and base colors */
 body {
   font-family: "Libre Baskerville", Georgia, serif;
@@ -20,7 +25,7 @@ h3 {
   color: var(--maroon, #6b1f2b);
 }
 
-/* header */
+/* site header */
 header {
   background-color: var(--maroon);
   position: sticky;
@@ -38,6 +43,7 @@ main {
   padding: 1rem 1.25rem;
 }
 
+/* two-column section layout */
 .top-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,14 +51,15 @@ main {
   align-items: start;
 }
 
+/* centered lower column */
 .bottom-column {
   width: 70%;
   max-width: 700px;
   margin: 0 auto;
 }
 
-/* section containers */
-section {
+/* section cards */
+section.card {
   background-color: var(--section-bg, #fffaf4);
   position: relative;
   margin-top: 1.25rem;
@@ -71,21 +78,24 @@ section {
   min-width: 0;
 }
 
+/* media section */
 #media {
   margin: 0 0 1.5rem 0;
   border: 2px solid var(--maroon);
 }
 
-/* navigation */
-nav ul {
+/* navigation list */
+nav > ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   padding-left: 0;
   list-style: none;
+  margin: 0;
 }
 
+/* navigation links */
 nav a {
   display: inline-block;
   color: white;
@@ -93,6 +103,7 @@ nav a {
   padding: 0.5rem 0.75rem;
 }
 
+/* navigation interactions */
 nav a:hover {
   text-decoration: underline;
 }
@@ -102,7 +113,31 @@ nav a:active {
   background-color: var(--section-bg);
 }
 
-/* footer */
+/* spacing for paragraphs after section headings */
+h2 + p {
+  margin-top: 0.5rem;
+}
+
+/* business section paragraphs */
+#business h2 ~ p {
+  line-height: 1.5;
+}
+
+/* media and text inputs */
+video[controls] {
+  max-width: 100%;
+}
+
+input[type="text"] {
+  border-color: var(--maroon);
+}
+
+/* video-containing section */
+section:has(video) {
+  text-align: center;
+}
+
+/* site footer */
 footer {
   background-color: var(--section-bg, #fffaf4);
   border-top: 2px solid color-mix(in srgb, var(--maroon) 75%, white 25%);
@@ -115,13 +150,20 @@ footer p {
   color: var(--text-color);
 }
 
-/* named color example */
+/* summary text */
 summary {
   color: turquoise;
 }
 
-/* color() example with fallback */
+/* meeting summary note */
 .quick-note {
   color: #6b1f2b;
   color: color(display-p3 0.42 0.12 0.17);
+}
+
+/* summary paragraph in lower column */
+.bottom-column {
+  & .meeting-summary {
+    text-align: center;
+  }
 }
