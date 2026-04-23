@@ -2,175 +2,205 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Project planning meeting minutes">
-    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project planning meeting minutes" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .quick-note {
+        letter-spacing: 0.03em;
+      }
+    </style>
+
     <title>Project Planning Team Meeting Minutes</title>
   </head>
-  <body>
-    <header>
-        <nav>
-            <ul>
-              <li><a href="#attendance">Attendance</a></li>
-              <li><a href="#agenda">Agenda</a></li>
-              <li><a href="#media">Media</a></li>
-            </ul>
-        </nav>
+  <body class="page-body">
+    <header class="site-header">
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#attendance">Attendance</a></li>
+          <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <h1>Project Planning Team Meeting</h1>
 
-        <section>
-          <h2>Meeting Topic</h2>
-          <p>Initial brainstorming session</p>
-        </section>
+    <main class="main-content">
+      <h1 class="page-title">Project Planning Team Meeting</h1>
 
-        <section>
-          <h2>Meeting Date</h2>
-          <p>April 14, 2026</p>
-        </section>
+      <section id="meeting-topic" class="card">
+        <h2 class="section-title">Meeting Topic</h2>
+        <p class="section-text">Initial brainstorming session</p>
+      </section>
 
-        <section id="attendance">
-          <h2>Attendance</h2>
-          <ul>
-            <li>Abdurrahman</li>
-            <li>Andrew</li>
-            <li>Mani</li>
-          </ul>
-        </section>
+      <section id="meeting-date" class="card">
+        <h2 class="section-title">Meeting Date</h2>
+        <p class="section-text">April 14, 2026</p>
+      </section>
 
-        <section id="agenda">
-          <h2>Agenda</h2>
-          <ol>
-            <li>Discuss features</li>
-            <li>Assign roles</li>
-            <li>Set deadlines</li>
-          </ol>
-        </section>
+      <section id="attendance" class="card">
+        <h2 class="section-title">Attendance</h2>
+        <ul class="people-list">
+          <li>Abdurrahman</li>
+          <li>Andrew</li>
+          <li>Mani</li>
+        </ul>
+      </section>
 
-        <section>
-          <h2>Unfinished Business</h2>
-          <p>No unfinished business.</p>
+      <section id="agenda" class="card">
+        <h2 class="section-title">Agenda</h2>
+        <ol class="agenda-list">
+          <li>Discuss features</li>
+          <li>Assign roles</li>
+          <li>Set deadlines</li>
+        </ol>
+      </section>
 
-          <hr>
+      <section id="business" class="card">
+        <h2 class="section-title">Unfinished Business</h2>
+        <p class="section-text">No unfinished business.</p>
 
-          <h2>New Business</h2>
-          <p>Discuss project delays.</p>
-        </section>
+        <hr class="section-divider" />
 
-        <section>
-          <h2>Miscellaneous</h2>
+        <h2 class="section-title">New Business</h2>
+        <p class="section-text">Discuss project delays.</p>
+      </section>
 
-          <details>
-            <summary>Questions raised</summary>
-            <p>What is the nature of the project, exactly?</p>
-          </details>
-        </section>
+      <section id="misc" class="card">
+        <h2 class="section-title">Miscellaneous</h2>
 
-        <section>
-          <h2>Logo placeholder</h2>
+        <details class="question-box">
+          <summary class="question-summary">Questions raised</summary>
+          <p class="section-text">What is the nature of the project, exactly?</p>
+        </details>
+      </section>
 
-          <img src="media/Logo.png" alt="Placeholder of the logo">
-        </section>
+      <section id="logo-section" class="card">
+        <h2 class="section-title">Logo placeholder</h2>
 
-        <section id="media">
-          <h2>Prototypes</h2>
-          <div>
-            <p>This section contains prototype media assets.</p>
-          </div>
-          
-          <h3>Ambience</h3>
-          <audio controls>
-            <source src="media/WaterSound.wav">
-          </audio>
+        <img
+          class="logo-image"
+          src="media/Logo.png"
+          alt="Placeholder of the logo"
+        />
+      </section>
 
-          <br>
-          
-          <h3>Gameplay</h3>
-          <video controls width="250">
-            <source src="media/ScreenRecording.mp4">
-          </video>
+      <section id="media" class="card featured-card">
+        <h2 class="section-title">Prototypes</h2>
+        <div class="media-description">
+          <p class="section-text">This section contains prototype media assets.</p>
+        </div>
 
-        </section>
+        <h3 class="subsection-title">Ambience</h3>
+        <audio class="media-audio" controls>
+          <source src="media/WaterSound.wav" />
+        </audio>
 
-        <p>
-          The <strong>main goal</strong> was to create a
-          <em>simple prototype</em> for testing.
-          One idea was <b>settings</b> to change the
-          <i>character controls</i>.
-          <span>This was rejected.</span>
-        </p>
+        <br />
 
-        <section>
-          <h2>Feedback Form</h2>
+        <h3 class="subsection-title">Gameplay</h3>
+        <video class="media-video" controls width="250">
+          <source src="media/ScreenRecording.mp4" />
+        </video>
+      </section>
 
-          <form>
+      <p class="meeting-summary quick-note">
+        The <strong>main goal</strong> was to create a
+        <em>simple prototype</em> for testing.
+        One idea was <b>settings</b> to change the
+        <i>character controls</i>.
+        <span style="color: darkred;">This was rejected.</span>
+      </p>
 
-            <fieldset>
+      <section id="feedback" class="card feedback-section">
+        <h2 class="section-title">Feedback Form</h2>
 
-              <label>Name:</label>
-              <input type="text">
+        <form class="feedback-form">
+          <fieldset class="form-box">
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-input" id="name" type="text" />
 
-              <br><br>
+            <br /><br />
 
-              <label>Date:</label>
-              <input type="date">
+            <label class="form-label" for="date">Date:</label>
+            <input class="form-input" id="date" type="date" />
 
-              <br><br>
+            <br /><br />
 
-              <label>Role:</label>
+            <p class="form-label">Role:</p>
+            <input id="role-dev" type="radio" name="role" />
+            <label for="role-dev">Dev</label>
 
-              <input type="radio" name="role"> Dev
-              <input type="radio" name="role"> Design
-              <input type="radio" name="role"> Audio
-              <input type="radio" name="role"> Art
+            <input id="role-design" type="radio" name="role" />
+            <label for="role-design">Design</label>
 
-              <br><br>
+            <input id="role-audio" type="radio" name="role" />
+            <label for="role-audio">Audio</label>
 
-              <label>Topics Covered:</label>
+            <input id="role-art" type="radio" name="role" />
+            <label for="role-art">Art</label>
 
-              <input type="checkbox"> UI
-              <input type="checkbox"> Gameplay
-              <input type="checkbox"> Audio
-              <input type="checkbox"> Art
+            <br /><br />
 
-              <br><br>
+            <p class="form-label">Topics Covered:</p>
+            <input id="topic-ui" type="checkbox" />
+            <label for="topic-ui">UI</label>
 
-              <label>Favorite Tool:</label>
+            <input id="topic-gameplay" type="checkbox" />
+            <label for="topic-gameplay">Gameplay</label>
 
-              <input list="tools">
+            <input id="topic-audio" type="checkbox" />
+            <label for="topic-audio">Audio</label>
 
-              <datalist id="tools">
-                <option value="VSCode">
-                <option value="Godot">
-                <option value="Blender">
-                <option value="Unity">
-              </datalist>
+            <input id="topic-art" type="checkbox" />
+            <label for="topic-art">Art</label>
 
-              <br><br>
+            <br /><br />
 
-              <label>Priority:</label>
+            <label class="form-label" for="tool">Favorite Tool:</label>
+            <input class="form-input" id="tool" list="tools" />
 
-              <select>
-                <option>High</option>
-                <option>Medium</option>
-                <option>Low</option>
-              </select>
+            <datalist id="tools">
+              <option value="VSCode"></option>
+              <option value="Godot"></option>
+              <option value="Blender"></option>
+              <option value="Unity"></option>
+            </datalist>
 
-              <br><br>
+            <br /><br />
 
-              <textarea rows="4" cols="30"></textarea>
+            <label class="form-label" for="priority">Priority:</label>
+            <select class="form-input" id="priority">
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+            </select>
 
-              <br><br>
+            <br /><br />
 
-              <button>Submit</button>
+            <label class="form-label" for="comments">Comments:</label>
+            <textarea class="form-input" id="comments" rows="4" cols="30"></textarea>
 
-            </fieldset>
+            <br /><br />
 
-          </form>
-        </section>
+            <button class="submit-button" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
-    <footer>
-      <p>Meeting minutes recorded April 2026</p>
+
+    <footer class="site-footer">
+      <p class="footer-note">Meeting minutes recorded April 2026</p>
     </footer>
   </body>
 </html>
