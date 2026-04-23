@@ -14,6 +14,8 @@
 /* page font and base colors */
 body {
   font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 12pt;
+  line-height: 1.5em;
   color: var(--text-color, #342424);
   background-color: var(--page-bg, #f6efe6);
 }
@@ -84,6 +86,11 @@ section.card {
   border: 2px solid var(--maroon);
 }
 
+.logo-image {
+  width: 6cm;
+  max-width: 100%;
+}
+
 /* navigation list */
 nav > ul {
   display: flex;
@@ -125,7 +132,9 @@ h2 + p {
 
 /* media and text inputs */
 video[controls] {
-  max-width: 100%;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
 }
 
 input[type="text"] {
