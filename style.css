@@ -20,55 +20,27 @@ h3 {
   color: var(--maroon, #6b1f2b);
 }
 
-/* main page areas */
+/* header */
 header {
-  background-color: #6b1f2b;
+  background-color: var(--maroon);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
 }
 
+/* main content area */
 main {
   background-color: var(--page-bg, #f6efe6);
-}
-
-section {
-  background-color: var(--section-bg, #fffaf4);
-  border: 1px solid rgba(107, 31, 43, 0.25);
-}
-
-footer {
-  background-color: var(--section-bg, #fffaf4);
-  border-top: 2px solid color-mix(in srgb, var(--maroon) 75%, white 25%);
-}
-
-/* navigation */
-nav a {
-  color: white;
-}
-
-/* named color example */
-summary {
-  color: turquoise;
-}
-
-/* color() example with fallback */
-.quick-note {
-  color: #6b1f2b;
-  color: color(display-p3 0.42 0.12 0.17);
-}
-
-/* section containers */
-main {
-  width: 90%; 
+  width: 90%;
   max-width: 900px;
   margin: auto;
   padding: 1rem 1.25rem;
 }
 
-header {
-  position: sticky;
-  top: 0;
-}
-
+/* section containers */
 section {
+  background-color: var(--section-bg, #fffaf4);
   position: relative;
   margin-top: 1.25rem;
   margin-right: 0;
@@ -89,4 +61,53 @@ section {
 #media {
   margin: 0 0 1.5rem 0;
   border: 2px solid var(--maroon);
+}
+
+/* navigation */
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: var(--maroon);
+  background-color: var(--section-bg);
+}
+
+/* footer */
+footer {
+  background-color: var(--section-bg, #fffaf4);
+  border-top: 2px solid color-mix(in srgb, var(--maroon) 75%, white 25%);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  display: block;
+  color: var(--text-color);
+}
+
+/* named color example */
+summary {
+  color: turquoise;
+}
+
+/* color() example with fallback */
+.quick-note {
+  color: #6b1f2b;
+  color: color(display-p3 0.42 0.12 0.17);
 }
