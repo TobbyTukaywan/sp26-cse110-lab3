@@ -38,6 +38,19 @@ main {
   padding: 1rem 1.25rem;
 }
 
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.bottom-column {
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 /* section containers */
 section {
   background-color: var(--section-bg, #fffaf4);
@@ -65,11 +78,12 @@ section {
 
 /* navigation */
 nav ul {
-  text-align: center;
-}
-
-nav li {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
 }
 
 nav a {
